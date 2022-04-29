@@ -1,3 +1,5 @@
+package ru.netology.service;
+
 import org.junit.jupiter.api.*;
 import org.mockito.Mockito;
 import ru.netology.patient.entity.BloodPressure;
@@ -13,12 +15,10 @@ import java.math.BigDecimal;
 
 public class ServiceTest {
 
-    PatientInfo patientInfo = Mockito.mock(PatientInfo.class);;
-    HealthInfo healthInfo = Mockito.mock(HealthInfo.class);;
-    PatientInfoRepository patientInfoRepository = Mockito.mock(PatientInfoRepository.class);;
-    SendAlertService sendAlertService = Mockito.spy(SendAlertServiceImpl.class);;
-
-
+    PatientInfo patientInfo = Mockito.mock(PatientInfo.class);
+    HealthInfo healthInfo = Mockito.mock(HealthInfo.class);
+    PatientInfoRepository patientInfoRepository = Mockito.mock(PatientInfoRepository.class);
+    SendAlertService sendAlertService = Mockito.spy(SendAlertServiceImpl.class);
 
     @Test
     public void testCheckBloodPressure() {
